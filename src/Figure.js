@@ -1,28 +1,39 @@
 import * as THREE from 'three'
 import { TweenMax as TM } from 'gsap'
+import vertexShader from './shaders/vertexShader.glsl'
+import fragmentShader from './shaders/fragmentShader.glsl'
 
 export default class Figure {
-    constructor( scene ) {
+    constructor( scene, cb ) {
         this.$image = document.querySelector( '.title_image' )
         this.scene = scene
+        this.callback = cb
+
         this.loader = new THREE.TextureLoader()
 
-        this.image = this.loader.load( this.$image.src )
+        this.image = this.loader.load( this.$image.src, () => {
+            this.start()
+        } )
         this.hoverImage = this.loader.load( this.$image.dataset.hover )
         this.$image.style.opacity = 0
 
         this.sizes = new THREE.Vector2( 0, 0 )
         this.offset = new THREE.Vector2( 0, 0 )
 
-        this.getSizes()
-
-        this.createMesh()
 
         this.mouse = new THREE.Vector2( 0, 0 )
         window.addEventListener( 'mousemove', ( event ) => {
             this.onMouseMove( event )
         } )
 
+    }
+
+    start() {
+        this.getSizes()
+
+        this.createMesh()
+
+        this.callback()
     }
 
     getSizes() {
@@ -36,9 +47,22 @@ export default class Figure {
     }
 
     createMesh() {
+        this.uniforms = {
+            u_image: { type: 't', value: this.image },
+            u_imagehover: { type: 't', value: this.hoverImage },
+            u_mouse: { value: this.mouse },
+            u_time: { value: 0 },
+            u_resolution: { value: new THREE.Vector2( window.innerWidth, window.innerHeight ) }
+        }
+
         this.geometry = new THREE.PlaneBufferGeometry( 1, 1, 1, 1 )
-        this.material = new THREE.MeshBasicMaterial( {
-            map: this.image
+        this.material = new THREE.ShaderMaterial( {
+            uniforms: this.uniforms,
+            vertexShader: vertexShader,
+            fragmentShader: fragmentShader,
+            defines: {
+                PR: window.devicePixelRatio.toFixed( 1 )
+            }
         } )
         this.mesh = new THREE.Mesh( this.geometry, this.material )
 
@@ -46,6 +70,10 @@ export default class Figure {
         this.mesh.scale.set( this.sizes.x, this.sizes.y, 1 )
 
         this.scene.add( this.mesh )
+    }
+
+    update() {
+        this.uniforms.u_time.value += 0.01
     }
 
     onMouseMove( event ) {
