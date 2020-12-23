@@ -1,4 +1,4 @@
 import './styles.css'
 import Scene from "./Scene"
 
-window.scene = new Scene()
+setTimeout(window.scene = new Scene(), 200000)

@@ -22,11 +22,12 @@ export default class Scene {
         this.initCamera()
 
         this.figure = new Figure( this.scene, () => {
-            this.update()
+            this.figure.update()
+            this.addEvents()
+
         } )
         this.snow = new Snow( this.scene )
 
-        this.addEvents()
     }
 
     initLights() {
