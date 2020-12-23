@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <title>Hover image changing</title>
 </head>
-<body>
-<![if !IE]>
+<body class="main">
 
 <div id="app">
     <section class="container">
-        <article class="title">
+        <article class="title" style="opacity: 0">
             <figure class="title_figure">
                 <img src="./assets/image1_test.jpg"
-                     alt="image de flocon"
+                     alt="image of snowflake"
                      width="400"
                      height="400"
                      class="title_image">
             </figure>
             <figure class="title_figure">
                 <img src="./assets/image2_test.jpg"
-                     alt="image de flocon2"
+                     alt="image of a second snowflake "
                      width="400"
                      height="400"
                      class="title_image2"
@@ -29,12 +28,19 @@
         </article>
     </section>
 
+    <section class="user-ie">
+
+        <video autoplay loop>
+            <source src="./assets/substitute_ie.mp4" type="video/mp4">
+        </video>
+    </section>
+
     <div class="sprites" style="display:none;">
-        <img class='snowflake1' src="./assets/snowflake1.png" alt="snowflake1">
-        <img class='snowflake2' src="./assets/snowflake2.png" alt="snowflake1">
-        <img class='snowflake3' src="./assets/snowflake3.png" alt="snowflake1">
-        <img class='snowflake4' src="./assets/snowflake4.png" alt="snowflake1">
-        <img class='snowflake5' src="./assets/snowflake5.png" alt="snowflake1">
+        <img class='snowflake1' src="./assets/snowflake1.png" alt="particle of snowflake1">
+        <img class='snowflake2' src="./assets/snowflake2.png" alt="particle of snowflake2">
+        <img class='snowflake3' src="./assets/snowflake3.png" alt="particle of snowflake3">
+        <img class='snowflake4' src="./assets/snowflake4.png" alt="particle of snowflake4">
+        <img class='snowflake5' src="./assets/snowflake5.png" alt="particle of snowflake5">
     </div>
 
     <canvas id="stage"></canvas>
@@ -44,11 +50,7 @@
     <p><a href="https://www.bricemangeat.fr">Edited by Brice Mangeat</a></p>
 </div>
 <script src="src/index.js"></script>
-<![endif]>
 
-<!--[if IE]>
-<div>Internet explorer c'est nul</div>
-<![endif]>
 
 
 
