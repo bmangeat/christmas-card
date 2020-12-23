@@ -19,6 +19,7 @@ export default class Figure {
         this.hover = this.loader.load(this.$hover.src)
 
 
+
         this.$image.style.opacity = 0
         this.sizes = new THREE.Vector2(0, 0)
         this.offset = new THREE.Vector2(0, 0)

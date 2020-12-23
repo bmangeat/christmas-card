@@ -1,5 +1,6 @@
 import * as THREE from 'three'
 import Figure from './Figure'
+import Snow from "./Snow"
 
 const perspective = 800
 
@@ -8,7 +9,7 @@ export default class Scene {
         this.container = document.getElementById( 'stage' )
 
         this.scene = new THREE.Scene()
-        this.scene.background = new THREE.Color( 0x000000 )
+        this.scene.background = new THREE.Color( 0x212121 )
         this.renderer = new THREE.WebGLRenderer( {
             canvas: this.container,
             alpha: true
@@ -23,6 +24,7 @@ export default class Scene {
         this.figure = new Figure( this.scene, () => {
             this.update()
         } )
+        this.snow = new Snow(this.scene)
     }
 
     initLights() {
@@ -49,6 +51,7 @@ export default class Scene {
         requestAnimationFrame( this.update.bind( this ) )
 
         this.figure.update()
+        this.snow.render()
 
         this.renderer.render( this.scene, this.camera )
     }
