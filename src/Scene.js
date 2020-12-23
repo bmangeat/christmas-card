@@ -24,13 +24,16 @@ export default class Scene {
         this.figure = new Figure( this.scene, () => {
             this.update()
         } )
-        this.snow = new Snow(this.scene)
+        this.snow = new Snow( this.scene )
+
+        this.addEvents()
     }
 
     initLights() {
         const ambientlight = new THREE.AmbientLight( 0xffffff, 2 )
         this.scene.add( ambientlight )
     }
+
 
     initCamera() {
         const fov =
@@ -44,6 +47,22 @@ export default class Scene {
             1000
         )
         this.camera.position.set( 0, 0, perspective )
+    }
+
+    onWindowResize() {
+        const w = window.innerWidth;
+        const h = window.innerHeight;
+
+        this.camera.aspect = w / h;
+        this.camera.updateProjectionMatrix();
+
+        this.renderer.setSize( w, h );
+    }
+
+
+    addEvents() {
+        window.requestAnimationFrame( this.update.bind( this ) );
+        window.addEventListener( "resize", this.onWindowResize.bind( this ), false );
     }
 
     update() {
