@@ -5,7 +5,7 @@
       {
         "debug": true,
         "target": {
-          "ie": "11"
+          "ie": "9"
         },
         "useBuiltIns": "usage"
       }
