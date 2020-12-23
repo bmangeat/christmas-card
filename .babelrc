@@ -1,0 +1,14 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "debug": true,
+        "target": {
+          "ie": "11"
+        },
+        "useBuiltIns": "usage"
+      }
+    ]
+  ]
+}
