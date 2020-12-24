@@ -1,14 +1,3 @@
 {
-  "presets": [
-    [
-      "@babel/preset-env",
-      {
-        "debug": true,
-        "target": {
-          "ie": "9"
-        },
-        "useBuiltIns": "usage"
-      }
-    ]
-  ]
+  "presets": ["@babel/preset-env"]
 }
