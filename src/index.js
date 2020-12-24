@@ -9,14 +9,11 @@ const msieversion = () => {
 
     if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
     {
+        console.log('je suis sur IE')
         document.querySelector('.user-ie').style.opacity = 1
         document.querySelector('.main').style.backgroundColor = '#212121'
-        let video = document.querySelector('.user-ie')
-        video.style.opacity = 1
-        video[0].onended = function (  ) {
-            this.load()
-            this.play()
-        }
+        let container_video = document.querySelector('.user-ie')
+        container_video.style.opacity = 1
 
     }
     else  // If another browser, return 0
