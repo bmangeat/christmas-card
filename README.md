@@ -51,9 +51,10 @@
 
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
-<p>
+<p align="center">
     <img src=".github/img/screenshot.png" alt="Screenshot" width="700" height="338">
 </p>
 
@@ -62,19 +63,19 @@ Christmas card: card moving according to the mouse and reveals overlapped photog
 ### Built With
 
 Major frameworks I used in this project.
+
 * [ThreeJS](https://threejs.org/)
 * [GSAP](https://greensock.com/gsap/)
 * [Parcel](https://parceljs.org/)
 
-
-
 <!-- GETTING STARTED -->
-## Getting Started
 
+## Getting Started
 
 ### Prerequisites
 
 You need to npm to run this project. Just a detail because everyone already has it.
+
 * npm
   ```sh
   npm install npm@latest -g
@@ -91,11 +92,12 @@ You need to npm to run this project. Just a detail because everyone already has 
    npm install
    ```
 
-
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any
+contributions you make are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -103,9 +105,8 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the ISC License.
@@ -113,6 +114,7 @@ Distributed under the ISC License.
 
 
 <!-- CONTACT -->
+
 ## Contact
 
 Your Name - [@BriceMangeat](https://twitter.com/BriceMangeat) - brice.mangeat@gmail.com
@@ -126,10 +128,17 @@ Project Link: [https://bmangeat.github.io/image-changing-threejs/](https://bmang
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+
 [linkedin-url]: https://www.linkedin.com/in/brice-mangeat-web-student/
+
 [twitter-shield]: https://img.shields.io/twitter/follow/BriceMangeat?color=blue&label=Twitter&logo=Twitter&logoColor=white&style=for-the-badge
+
 [twitter-url]: https://twitter.com/BriceMangeat
+
 [github-shield]: https://img.shields.io/github/followers/bmangeat?color=lightgrey&label=Github&logo=github&style=for-the-badge
+
 [github-url]: https://github.com/bmangeat
+
 [last-commit-shield]: https://img.shields.io/github/last-commit/bmangeat/image-changing-threejs?color=yellow&style=for-the-badge
+
 [last-commit-url]: https://github.com/bmangeat/image-changing-threejs/commits
