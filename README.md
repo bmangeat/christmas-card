@@ -85,7 +85,7 @@ You need to npm to run this project. Just a detail because everyone already has 
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/bmangeat/cube-follow-path.git
+   git clone https://github.com/bmangeat/image-changing-threejs.git
    ```
 3. Install NPM packages
    ```sh
