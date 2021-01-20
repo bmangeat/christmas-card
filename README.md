@@ -9,18 +9,18 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/bmangeat/image-changing-threejs">
+  <a href="https://github.com/bmangeat/christmas-card">
     <img src=".github/img/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Christmas Card</h3>
 
   <p align="center">
-    <a href="https://bmangeat.github.io/image-changing-threejs/">View Demo</a>
+    <a href="https://bmangeat.github.io/christmas-card/">View Demo</a>
     ·
-    <a href="https://github.com/bmangeat/image-changing-threejs/issues">Report Bug</a>
+    <a href="https://github.com/bmangeat/christmas-card/issues">Report Bug</a>
     ·
-    <a href="https://github.com/bmangeat/image-changing-threejs/issues">Request Feature</a>
+    <a href="https://github.com/bmangeat/christmas-card/issues">Request Feature</a>
   </p>
 
 
@@ -85,9 +85,9 @@ You need to npm to run this project. Just a detail because everyone already has 
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/bmangeat/image-changing-threejs.git
+   git clone https://github.com/bmangeat/christmas-card.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
@@ -119,7 +119,7 @@ Distributed under the ISC License.
 
 Your Name - [@BriceMangeat](https://twitter.com/BriceMangeat) - brice.mangeat@gmail.com
 
-Project Link: [https://bmangeat.github.io/image-changing-threejs/](https://bmangeat.github.io/image-changing-threejs/)
+Project Link: [https://bmangeat.github.io/christmas-card/](https://bmangeat.github.io/image-changing-threejs/)
 
 
 
@@ -139,6 +139,6 @@ Project Link: [https://bmangeat.github.io/image-changing-threejs/](https://bmang
 
 [github-url]: https://github.com/bmangeat
 
-[last-commit-shield]: https://img.shields.io/github/last-commit/bmangeat/image-changing-threejs?color=yellow&style=for-the-badge
+[last-commit-shield]: https://img.shields.io/github/last-commit/bmangeat/christmas-card?color=yellow&style=for-the-badge
 
-[last-commit-url]: https://github.com/bmangeat/image-changing-threejs/commits
+[last-commit-url]: https://github.com/bmangeat/christmas-card/commits
