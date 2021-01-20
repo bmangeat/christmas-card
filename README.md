@@ -117,7 +117,7 @@ Distributed under the ISC License.
 
 ## Contact
 
-Your Name - [@BriceMangeat](https://twitter.com/BriceMangeat) - brice.mangeat@gmail.com
+Brice Mangeat - [@BriceMangeat](https://twitter.com/BriceMangeat) - brice.mangeat@gmail.com
 
 Project Link: [https://bmangeat.github.io/christmas-card/](https://bmangeat.github.io/image-changing-threejs/)
 
